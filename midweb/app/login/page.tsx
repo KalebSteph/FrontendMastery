@@ -1,28 +1,29 @@
-import Image from "next/image";
+"use client"
+
+import { useRouter } from "next/navigation";
 import "./login.css";
 
 export default function LoginPage() {
+  const router = useRouter();
+
   return (
     <div className="container">
-      {/* Top Bar */}
       <div className="topBar" />
 
-      {/* Main Content */}
       <div className="content">
         <h1>Welcome to Check-In Admin</h1>
 
-        <button className="loginButton">Login</button>
+        <button
+          className="loginButton"
+          onClick={() => router.push("/admin")}
+        >
+          Login
+        </button>
       </div>
 
-      {/* Bottom Bar */}
       <div className="bottomBar">
         <div className="logoWrapper">
-          <Image
-            src="/images/logo.png"
-            alt="Check-In Monitor Logo"
-            width={160}
-            height={100}
-          />
+          <img src="/images/logo.png" width={160} height={100} alt="logo" />
         </div>
 
         <p className="helpText">Help</p>

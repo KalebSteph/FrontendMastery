@@ -1,0 +1,116 @@
+.adminContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #b48c63;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP BAR */
+.topBar {
+  height: 120px;
+  background-color: #a07448;
+}
+
+/* TITLE */
+.adminTitle {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 36px;
+  color: black;
+}
+
+/* CONTENT AREA */
+.adminContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  margin-top: 40px;
+}
+
+/* LEFT BUTTONS */
+.leftButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bigButton {
+  width: 180px;
+  height: 70px;
+  background-color: #f7e9b4;
+  border: 1px solid #c8b580;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+/* ROOM LIST */
+.roomListContainer {
+  width: 260px;
+  background-color: #f7e9b4;
+  padding: 20px;
+  border: 1px solid #c8b580;
+}
+
+.roomListHeader {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* EACH ROOM ROW */
+.roomRow {
+  background-color: #f7e9b4;
+  border-top: 1px solid #c8b580;
+  padding: 10px;
+  color: #000000;
+}
+
+.roomRow:first-of-type {
+  border-top: none;
+}
+
+.roomName {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* TRASH ICON */
+.roomHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* DROPDOWN DETAILS */
+.roomDetails {
+  margin-top: 10px;
+  background-color: #ffffff90;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.statusText {
+  color: red;
+  font-size: 14px;
+}
+
+/* BOTTOM BAR */
+.bottomBar {
+  height: 120px;
+  background-color: #8a6441;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.helpText {
+  font-size: 18px;
+  color: black;
+}
