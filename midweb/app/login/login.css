@@ -1,0 +1,64 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #b48c63; /* main tan color */
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP BAR */
+.topBar {
+  height: 120px;
+  background-color: #a07448; /* darker brown */
+}
+
+/* MAIN AREA */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* LOGIN BUTTON */
+.loginButton {
+  background-color: #f7e9b4;
+  border: 1px solid #c8b580;
+  padding: 10px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.loginButton:hover {
+  opacity: 0.9;
+}
+
+/* BOTTOM BAR */
+.bottomBar {
+  height: 120px;
+  background-color: #8a6441;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* LOGO LEFT */
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* HELP RIGHT */
+.helpText {
+  font-size: 18px;
+  color: #000000;
+}
